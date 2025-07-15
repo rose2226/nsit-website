@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Nik Speed Institute of Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>NSIT</h1>
+                <p>Nik Speed Institute</p>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="testimonials.html" class="nav-link">Success Stories</a>
+                
+            </div>
+            <div class="nav-buttons">
+                <a href="register.html" class="btn btn-primary">Register Now</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content" style="text-align: center; grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <span class="badge">Registration</span>
+                    <h1>Register for Computer Skills Training</h1>
+                    <p>Take the first step towards transforming your career. Fill out the form to register for our courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="quick-about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>How Registration Works</h2>
+                    <p>Follow these simple steps to enroll in your chosen course:</p>
+                    <div style="margin-top: 2rem;">
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                            <div style="background-color: #2563eb; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 1rem; flex-shrink: 0;">1</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem; font-size: 1rem;">Submit Registration</h4>
+                                <p style="font-size: 0.9rem; margin-bottom: 0;">Complete and submit the registration form with your details</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                            <div style="background-color: #2563eb; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 1rem; flex-shrink: 0;">2</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem; font-size: 1rem;">Confirmation Call</h4>
+                                <p style="font-size: 0.9rem; margin-bottom: 0;">We'll contact you within 24 hours to confirm your registration</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                            <div style="background-color: #2563eb; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 1rem; flex-shrink: 0;">3</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem; font-size: 1rem;">Payment & Enrollment</h4>
+                                <p style="font-size: 0.9rem; margin-bottom: 0;">Complete payment and receive your class schedule</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                            <div style="background-color: #2563eb; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 1rem; flex-shrink: 0;">4</div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem; font-size: 1rem;">Start Learning</h4>
+                                <p style="font-size: 0.9rem; margin-bottom: 0;">Begin your course on the scheduled date</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <h3 style="color: #2563eb; margin-bottom: 1rem;">Need Help?</h3>
+                        <div>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Phone:</strong> +256 XXX XXX XXX</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Email:</strong> info@nsit.ug</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Visit:</strong> Kasubi, Kampala</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Hours:</strong> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <h3>Registration Form</h3>
+                    <form id="registrationForm" style="margin-top: 1.5rem;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Select Course *</label>
+                            <select id="course" name="course" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                                <option value="">Choose a course</option>
+                                <option value="internet-basics">Internet Basics.</option>
+                                <option value="computer-hardware">Computer Hardware.</option>
+                                <option value="ms-office">MS Office Suite.</option>
+                                <option value="social-media">Social Media Marketing.</option>
+                                <option value="cryptocurrency">Cryptocurrency & Blockchain.</option>
+                                <option value="artificial-intelligence">Artificial Intelligence.</option>
+                            </select>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Email Address *</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Why do you want to take this course? *</label>
+                            <textarea id="motivation" name="motivation" rows="3" placeholder="Tell us about your goals and motivation" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;"></textarea>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 1.5rem;">
+                            <input type="checkbox" id="terms" name="terms" required style="width: auto; margin-top: 0.25rem;">
+                            <label for="terms" style="margin-bottom: 0; font-size: 0.9rem;">I agree to the Terms and Conditions and Privacy Policy *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Registration</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Preview -->
+    <section class="featured-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Courses</h2>
+                <p>Quick overview of our most popular training programs</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">🌐</div>
+                    <h3>Internet Basics</h3>
+                    <p>Perfect for beginners. Learn browsing, email, and online safety.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3>MS Office Suite</h3>
+                    <p>Master Word, Excel, PowerPoint for office productivity.</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📱</div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Learn to grow businesses through social media platforms.</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="courses.html" class="btn btn-outline">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NSIT</h3>
+                    <p>Nik Speed Institute of Technology - Empowering communities through quality computer education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="testimonials.html">Success Stories</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Internet Basics</a></li>
+                        <li><a href="courses.html">MS Office Suite</a></li>
+                        <li><a href="courses.html">Social Media Marketing</a></li>
+                        <li><a href="courses.html">Computer Hardware</a></li>
+                        <li><a href="courses.html">AI & Cryptocurrency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Kasubi, Kampala, Uganda</p>
+                    <p>📞 +256 750 522 513</p>
+                    <p>✉️ info@nsit.ug</p>
+                    <p>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nik Speed Institute of Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
