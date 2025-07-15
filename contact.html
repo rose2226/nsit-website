@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nik Speed Institute of Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>NSIT</h1>
+                <p>Nik Speed Institute</p>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="testimonials.html" class="nav-link">Success Stories</a>
+                
+            </div>
+            <div class="nav-buttons">
+                <a href="register.html" class="btn btn-primary">Register Now</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content" style="text-align: center; grid-template-columns: 1fr;">
+                <div class="hero-text">
+                    <span class="badge">Contact Us</span>
+                    <h1>Get in Touch</h1>
+                    <p>Have questions about our courses, admissions, or want to visit our campus? We're here to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="quick-about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div style="display: grid; gap: 2rem;">
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="font-size: 1.5rem; margin-top: 0.25rem;"></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Visit Our Campus</h4>
+                                <p style="margin-bottom: 0; color: #666;">Kasubi, Kampala<br>Uganda</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="font-size: 1.5rem; margin-top: 0.25rem;"></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Call Us</h4>
+                                <p style="margin-bottom: 0; color: #666;">+256 750 525 513<br>+256 750 525 513</p>
+                               
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="font-size: 1.5rem; margin-top: 0.25rem;"></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Email Us</h4>
+                                <p style="margin-bottom: 0; color: #666;">info@nsit.ug<br>admissions@nsit.ug</p>
+                               
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="font-size: 1.5rem; margin-top: 0.25rem;"></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Office Hours</h4>
+                                <p style="margin-bottom: 0; color: #666;">Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #f8fafc; padding: 2rem; border-radius: 12px;">
+                    <h3>Send Us a Message</h3>
+                    <p style="margin-bottom: 2rem; color: #666;">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Subject *</label>
+                            <input type="text" id="subject" name="subject" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please provide details about your inquiry..." required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Tech Journey?</h2>
+                <p>Contact us today to learn more about our courses and begin your transformation.</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-primary btn-large">Register Now</a>
+                    <a href="courses.html" class="btn btn-outline btn-large">View Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NSIT</h3>
+                    <p>Nik Speed Institute of Technology - Empowering communities through quality computer education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="testimonials.html">Success Stories</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Internet Basics</a></li>
+                        <li><a href="courses.html">MS Office Suite</a></li>
+                        <li><a href="courses.html">Social Media Marketing</a></li>
+                        <li><a href="courses.html">Computer Hardware</a></li>
+                        <li><a href="courses.html">AI & Cryptocurrency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p> Kasubi, Kampala, Uganda</p>
+                    <p> +256 750 525 513</p>
+                    <p> info@nsit.ug</p>
+                    <p> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nik Speed Institute of Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
