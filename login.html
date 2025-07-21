@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nik Speed Institute of Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #007bff, #6a11cb);
+            color: #333;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .login-card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            color: #222;
+            font-weight: 700;
+        }
+
+        .login-card label {
+            display: block;
+            text-align: left;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .login-card input, 
+        .login-card select {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .login-card input:focus,
+        .login-card select:focus {
+            border-color: #6a11cb;
+            box-shadow: 0 0 6px rgba(106, 17, 203, 0.4);
+            outline: none;
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 0.9rem;
+            background: linear-gradient(90deg, #007bff, #6a11cb);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .login-card button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #0056b3, #5a0fb1);
+        }
+
+        .login-card p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .login-card p a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-card p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Same as index) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>NSIT</h1>
+                <p>Nik Speed Institute</p>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="testimonials.html" class="nav-link">Success Stories</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="register.html" class="btn btn-primary">Register</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, #007bff, #6a11cb); color: #fff;">
+    <div class="hero-container">
+        <div class="hero-content" style="text-align: center; grid-template-columns: 1fr;">
+            <div class="hero-text">
+                <span class="badge" style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; color: #fff;">Login</span>
+                <h1 style="margin-top: 1rem; font-size: 2.5rem; font-weight: 700;">Access Your Account</h1>
+                <p style="margin-top: 0.5rem; font-size: 1.1rem;">Login to manage your courses, track your progress, and stay connected with NSIT.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Login Form -->
+    <section class="login-container">
+        <div class="login-card">
+            <h2>Welcome Back</h2>
+            <form action="login_process.php" method="POST">
+                <label for="role">Login as:</label>
+                <select name="role" id="role" required>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NSIT</h3>
+                    <p>Nik Speed Institute of Technology - Empowering communities through quality computer education.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="testimonials.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Internet Basics</a></li>
+                        <li><a href="courses.html">MS Office Suite</a></li>
+                        <li><a href="courses.html">Social Media Marketing</a></li>
+                        <li><a href="courses.html">Computer Hardware</a></li>
+                        <li><a href="courses.html">AI & Cryptocurrency</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: Hoima Road, Kasubi-Kampala, Uganda.</p>
+                    <p>Phone: +256 701 574 837</p>
+                    <p>Email: info@nsit.com</p>
+                    <p>Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nik Speed Institute of Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
