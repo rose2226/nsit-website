@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -23,7 +22,7 @@
                 
             </div>
             <div class="nav-buttons">
-                <a href="register.html" class="btn btn-primary">login</a>
+                <a href="login.html" class="btn btn-primary">login</a>
                 <a href="contact.html" class="btn btn-outline">Contact Us</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -34,7 +33,6 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="hero" style="min-height: 60vh;">
         <div class="hero-container">
             <div class="hero-content" style="text-align: center; grid-template-columns: 1fr;">
@@ -47,7 +45,6 @@
         </div>
     </section>
 
-    <!-- Registration Section -->
     <section class="quick-about">
         <div class="container">
             <div class="about-content">
@@ -98,28 +95,28 @@
                 
                 <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                     <h3>Registration Form</h3>
-                    <form id="registrationForm" style="margin-top: 1.5rem;">
+                    <form id="registrationForm" action="register_student.php" method="POST" style="margin-top: 1.5rem;">
                         <div style="margin-bottom: 1.5rem;">
                             <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Select Course *</label>
-                            <select id="course" name="course" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            <select id="course" name="course_registered" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
                                 <option value="">Choose a course</option>
-                                <option value="internet-basics">Internet Basics.</option>
-                                <option value="computer-hardware">Computer Hardware.</option>
-                                <option value="ms-office">MS Office Suite.</option>
-                                <option value="social-media">Social Media Marketing.</option>
-                                <option value="cryptocurrency">Cryptocurrency & Blockchain.</option>
-                                <option value="artificial-intelligence">Artificial Intelligence.</option>
+                                <option value="Internet Basics">Internet Basics</option>
+                                <option value="Computer Hardware">Computer Hardware</option>
+                                <option value="MS Office Suite">MS Office Suite</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="Cryptocurrency & Blockchain">Cryptocurrency & Blockchain</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
                             </select>
                         </div>
                         
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                                <input type="text" id="firstName" name="first_name" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
                             </div>
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                                <input type="text" id="lastName" name="last_name" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
                             </div>
                         </div>
                         
@@ -130,13 +127,29 @@
                             </div>
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+256 XXX XXX XXX" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                                <input type="tel" id="phone" name="phone_number" placeholder="+256 XXX XXX XXX" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Choose a Username *</label>
+                            <input type="text" id="username" name="username" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Password *</label>
+                                <input type="password" id="password" name="password" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Confirm Password *</label>
+                                <input type="password" id="confirm_password" name="confirm_password" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;">
                             </div>
                         </div>
                         
                         <div style="margin-bottom: 1.5rem;">
                             <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: #374151;">Why do you want to take this course? *</label>
-                            <textarea id="motivation" name="motivation" rows="3" placeholder="Tell us about your goals and motivation" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;"></textarea>
+                            <textarea id="motivation" name="reason_for_course" rows="3" placeholder="Tell us about your goals and motivation" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 14px;"></textarea>
                         </div>
                         
                         <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 1.5rem;">
@@ -146,12 +159,11 @@
                         
                         <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Registration</button>
                     </form>
-                </div>
+                    </div>
             </div>
         </div>
     </section>
 
-    <!-- Course Preview -->
     <section class="featured-courses">
         <div class="container">
             <div class="section-header">
@@ -162,7 +174,7 @@
                 <div class="course-card">
                     <div class="course-icon">🌐</div>
                     <h3>Internet Basics</h3>
-                    <p>Perfect for beginners. Learn browsing, email, and online safety.</p>
+                    <p>Perfect for beginners. Learn Browse, email, and online safety.</p>
                 </div>
                 <div class="course-card">
                     <div class="course-icon">📊</div>
@@ -181,7 +193,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
